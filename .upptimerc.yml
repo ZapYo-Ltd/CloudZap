@@ -1,6 +1,6 @@
 # Change these first
 owner: ZapYo-Ltd
-repo: OnezCloud-Status
+repo: uptime
 
 sites:
   - name: Park Homes Law
@@ -9,7 +9,7 @@ sites:
 status-website:
   cname: status.onezcloud.uk
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: OneCloud Uptime
+  name: OnezCloud Uptime
   introTitle: "**OnezCloud Uptime** – Your Digital Peace of Mind"
   introMessage: Welcome to our real-time status page. We continuously monitor the availability of our services. If there are any issues, they'll be reported here. Powered by [Upptime](https://github.com/upptime/upptime) and GitHub Actions.
   navbar:
