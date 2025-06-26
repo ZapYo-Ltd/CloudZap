@@ -11,8 +11,7 @@ jobs:
       github.event.issue.title contains 'Park Homes Law' ||
       github.event.issue.title contains 'Holiday Park Law' ||
       github.event.issue.title contains 'Lease Barristers' ||
-      github.event.issue.title contains 'Rent Repayment Law' ||
-      github.event.issue.title contains 'Park Homes Legal UK'
+      github.event.issue.title contains 'Rent Repayment Law'
     runs-on: ubuntu-latest
     steps:
       - name: Send recovery email via Brevo
