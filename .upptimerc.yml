@@ -35,10 +35,15 @@ status-website:
   cname: status.onezcloud.uk
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: OnezCloud Uptime
-  introTitle: "**OnezCloud Uptime** – Your Digital Peace of Mind"
-  introMessage: Welcome to our real-time status page. We continuously monitor the availability of our services. If there are any issues, they'll be reported here. Powered by [Upptime](https://github.com/upptime/upptime) and GitHub Actions.
+  iname: OnezCloud Uptime
+introTitle: "**OnezCloud Uptime** – Monitoring by ZapYo Ltd"
+introMessage: OnezCloud Uptime is a service provided by ZapYo Ltd, offering real-time monitoring of our digital services and key client platforms. Outages and disruptions will be displayed here as they happen. Powered by [Upptime](https://github.com/upptime/upptime) and GitHub Actions.
   navbar:
     - title: Status
       href: /
+    - title: OnezCloud
+      href: https://onezcloud.uk
+    - title: ZapYo Ltd
+      href: https://zapyo.uk
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
