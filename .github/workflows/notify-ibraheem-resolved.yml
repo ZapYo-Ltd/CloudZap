@@ -14,25 +14,23 @@ jobs:
       github.event.issue.title contains 'Rent Repayment Law'
     runs-on: ubuntu-latest
     steps:
-      - name: Send recovery email via Brevo
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp-relay.brevo.com
-          server_port: 587
-          username: ${{ secrets.BREVO_USERNAME }}
-          password: ${{ secrets.BREVO_PASSWORD }}
-          subject: "✅ Resolved: ${{ github.event.issue.title }}"
-          body: |
-            Hi Ibraheem,
-
-            Good news! The following service has recovered and is now back online:
-
-            • ${{ github.event.issue.title }}
-            • Status Page: https://status.onezcloud.uk
-
-            If you have any questions, feel free to get in touch.
-
-            -- OnezCloud Uptime (ZapYo Ltd)
-          to: info@ibraheemdulmeer.com
-          cc: watchdog@onezcloud.uk
-          from: uwatchdog@onezcloud.uk
+      - name: Send recovery email via Brevo API
+        run: |
+          curl -X POST https://api.brevo.com/v3/smtp/email \
+          -H 'accept: application/json' \
+          -H 'api-key: ${{ secrets.BREVO_API_KEY }}' \
+          -H 'content-type: application/json' \
+          -d '{
+                "sender": {
+                  "name": "OnezCloud Uptime",
+                  "email": "watchdog@onezcloud.uk"
+                },
+                "to": [
+                  { "email": "info@ibraheemdulmeer.com", "name": "Ibraheem Dulmeer" }
+                ],
+                "cc": [
+                  { "email": "watchdog@onezcloud.uk", "name": "Will Young" }
+                ],
+                "subject": "✅ Resolved: ${{ github.event.issue.title }}",
+                "htmlContent": "<p>Hi Ibraheem,</p><p>Good news! The following service has recovered and is now back online:</p><ul><li><strong>Site:</strong> ${{ github.event.issue.title }}</li><li><strong>Status Page:</strong> <a href='https://status.onezcloud.uk'>OnezCloud Status</a></li></ul><p>If you have any questions, feel free to get in touch.</p><p>-- OnezCloud Uptime (ZapYo Ltd)</p>"
+              }'

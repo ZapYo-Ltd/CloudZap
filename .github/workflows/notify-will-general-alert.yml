@@ -5,26 +5,18 @@ on:
     types: [opened, closed]
 
 jobs:
-  notify:
+  send_email:
     runs-on: ubuntu-latest
     steps:
-      - name: Send internal alert email
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp-relay.brevo.com
-          server_port: 587
-          username: ${{ secrets.BREVO_USERNAME }}
-          password: ${{ secrets.BREVO_PASSWORD }}
-          subject: "${{ github.event.issue.state == 'closed' && '✅ RESOLVED' || '🚨 ALERT' }}: ${{ github.event.issue.title }}"
-          body: |
-            Hello Will,
-
-            This is an internal alert from OnezCloud Uptime.
-
-            • Event: ${{ github.event.issue.state == 'closed' && 'Resolved' || 'Incident Opened' }}
-            • Site: ${{ github.event.issue.title }}
-            • Details: https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}
-
-            -- Automated Notification
-          to: watchdog@onezcloud.uk
-          from: watchdog@onezcloud.uk
+      - name: Send email via Brevo API
+        run: |
+          curl -X POST https://api.brevo.com/v3/smtp/email \
+          -H 'accept: application/json' \
+          -H 'api-key: ${{ secrets.BREVO_API_KEY }}' \
+          -H 'content-type: application/json' \
+          -d '{
+                "sender": { "name": "OnezCloud Uptime Alert", "email": "watchdog@onezcloud.uk" },
+                "to": [{ "email": "watchdog@onezcloud.uk", "name": "Will Young" }],
+                "subject": "'"${{ github.event.issue.state == 'closed' && '✅ RESOLVED' || '🚨 ALERT' }}: ${{ github.event.issue.title }}"'",
+                "htmlContent": "<p>Hello Will,</p><p>This is an internal alert from OnezCloud Uptime.</p><ul><li><strong>Event:</strong> ${{ github.event.issue.state == 'closed' && 'Resolved' || 'Incident Opened' }}</li><li><strong>Site:</strong> ${{ github.event.issue.title }}</li><li><strong>Details:</strong> <a href='https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}'>View Issue</a></li></ul><p>-- Automated Notification</p>"
+              }'

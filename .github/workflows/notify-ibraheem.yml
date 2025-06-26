@@ -14,26 +14,23 @@ jobs:
       github.event.issue.title contains 'Rent Repayment Law'
     runs-on: ubuntu-latest
     steps:
-      - name: Send Brevo email
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp-relay.brevo.com
-          server_port: 587
-          username: ${{ secrets.BREVO_USERNAME }}
-          password: ${{ secrets.BREVO_PASSWORD }}
-          subject: "🚨 Incident Alert: ${{ github.event.issue.title }}"
-          body: |
-            Hi Ibraheem,
-
-            One of your monitored sites has been reported as down:
-
-            • Issue: ${{ github.event.issue.title }}
-            • View full details: https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}
-            • Status Page: https://status.onezcloud.uk
-
-            We'll continue to monitor and notify you once the service is restored.
-
-            -- OnezCloud Uptime (ZapYo Ltd)
-          to: info@ibraheemdulmeer.com
-          cc: watchdog@onezcloud.uk
-          from: uwatchdog@onezcloud.uk
+      - name: Send email via Brevo API
+        run: |
+          curl -X POST https://api.brevo.com/v3/smtp/email \
+          -H 'accept: application/json' \
+          -H 'api-key: ${{ secrets.BREVO_API_KEY }}' \
+          -H 'content-type: application/json' \
+          -d '{
+                "sender": {
+                  "name": "OnezCloud Uptime",
+                  "email": "watchdog@onezcloud.uk"
+                },
+                "to": [
+                  { "email": "info@ibraheemdulmeer.com", "name": "Ibraheem Dulmeer" }
+                ],
+                "cc": [
+                  { "email": "watchdog@onezcloud.uk", "name": "Will Young" }
+                ],
+                "subject": "🚨 Incident Alert: ${{ github.event.issue.title }}",
+                "htmlContent": "<p>Hi Ibraheem,</p><p>One of your monitored sites has been reported as down:</p><ul><li><strong>Issue:</strong> ${{ github.event.issue.title }}</li><li><strong>View full details:</strong> <a href='https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}'>GitHub Issue</a></li><li><strong>Status Page:</strong> <a href='https://status.onezcloud.uk'>OnezCloud Status</a></li></ul><p>We'll continue to monitor and notify you once the service is restored.</p><p>-- OnezCloud Uptime (ZapYo Ltd)</p>"
+              }'
