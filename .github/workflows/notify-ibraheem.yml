@@ -34,6 +34,6 @@ jobs:
             We'll continue to monitor and notify you once the service is restored.
 
             -- OnezCloud Uptime (ZapYo Ltd)
-          to: ibraheem@example.com
-          cc: will@example.com
-          from: uptime@onezcloud.uk
+          to: info@ibraheemdulmeer.com
+          cc: watchdog@onezcloud.uk
+          from: uwatchdog@onezcloud.uk

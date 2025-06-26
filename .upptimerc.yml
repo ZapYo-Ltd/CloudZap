@@ -6,8 +6,8 @@ sites:
     sites:
       - name: ZapYo Ltd
         url: https://zapyo.uk
-      - name: OnezCloud
-        url: https://onezcloud.uk
+      - name: OnezCloud Status
+        url: https://status.onezcloud.uk
       - name: UK Buzz
         url: https://ukbuzz.uk
       - name: Will Young
@@ -57,3 +57,4 @@ status-website:
       href: https://zapyo.uk
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+``

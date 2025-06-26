@@ -26,5 +26,5 @@ jobs:
             • Details: https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}
 
             -- Automated Notification
-          to: will@example.com
-          from: uptime@onezcloud.uk
+          to: watchdog@onezcloud.uk
+          from: watchdog@onezcloud.uk
