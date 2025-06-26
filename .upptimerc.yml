@@ -1,34 +1,36 @@
 owner: ZapYo-Ltd
 repo: uptime
 sites:
- - name: ZapYo Ltd
+  - name: ZapYo Ltd
     url: https://zapyo.uk
- - name: Ibraheem Dulmeer
+  - name: Ibraheem Dulmeer
     url: https://www.ibraheemdulmeer.com
- - name: Park Homes Law
+  - name: Park Homes Law
     url: https://parkhomeslaw.com
- - name: Holiday Park Law
+  - name: Holiday Park Law
     url: https://www.holidayparklaw.com
- - name: Lease Barristers
+  - name: Lease Barristers
     url: https://leasebarristers.com
- - name: Rent Repayment Law
+  - name: Rent Repayment Law
     url: https://rentrepaymentlaw.com
- - name: Park Homes Legal UK
+  - name: Park Homes Legal UK
     url: https://parkhomeslegal.uk
- - name: The Angel Inn
+  - name: The Angel Inn
     url: https://theangelinn.uk
- - name: UK Buzz
+  - name: UK Buzz
     url: https://ukbuzz.uk
- - name: Sweetstay
+  - name: Sweetstay
     url: https://sweetstay.uk
- - name: Wrangle Village
+  - name: Wrangle Village
     url: https://wranglevillage.uk
- - name: Will Young
+  - name: Will Young
     url: https://willyoung.uk
- - name: The Young Onez Ltd
+  - name: The Young Onez Ltd
     url: https://theyoungonez.uk
+
 assignees:
- - bigdopeywill
+  - bigdopeywill
+
 status-website:
   cname: status.onezcloud.uk
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
@@ -40,5 +42,3 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
