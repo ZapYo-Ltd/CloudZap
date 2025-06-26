@@ -1,7 +1,5 @@
-# Change these first
 owner: ZapYo-Ltd
 repo: uptime
-
 sites:
  - name: ZapYo Ltd
     url: https://zapyo.uk
@@ -31,7 +29,6 @@ sites:
     url: https://theyoungonez.uk
 assignees:
  - bigdopeywill
-
 status-website:
   cname: status.onezcloud.uk
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
@@ -43,6 +40,5 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
