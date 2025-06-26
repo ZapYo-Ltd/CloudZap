@@ -1,0 +1,30 @@
+name: Notify Will on Any Site Incident or Recovery
+
+on:
+  issues:
+    types: [opened, closed]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send internal alert email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp-relay.brevo.com
+          server_port: 587
+          username: ${{ secrets.BREVO_USERNAME }}
+          password: ${{ secrets.BREVO_PASSWORD }}
+          subject: "${{ github.event.issue.state == 'closed' && '✅ RESOLVED' || '🚨 ALERT' }}: ${{ github.event.issue.title }}"
+          body: |
+            Hello Will,
+
+            This is an internal alert from OnezCloud Uptime.
+
+            • Event: ${{ github.event.issue.state == 'closed' && 'Resolved' || 'Incident Opened' }}
+            • Site: ${{ github.event.issue.title }}
+            • Details: https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}
+
+            -- Automated Notification
+          to: will@example.com
+          from: uptime@onezcloud.uk
