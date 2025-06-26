@@ -1,0 +1,39 @@
+name: Notify Ibraheem on Site Recovery
+
+on:
+  issues:
+    types: [closed]
+
+jobs:
+  notify:
+    if: >
+      github.event.issue.title contains 'Ibraheem Dulmeer' ||
+      github.event.issue.title contains 'Park Homes Law' ||
+      github.event.issue.title contains 'Holiday Park Law' ||
+      github.event.issue.title contains 'Lease Barristers' ||
+      github.event.issue.title contains 'Rent Repayment Law' ||
+      github.event.issue.title contains 'Park Homes Legal UK'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send recovery email via Brevo
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp-relay.brevo.com
+          server_port: 587
+          username: ${{ secrets.BREVO_USERNAME }}
+          password: ${{ secrets.BREVO_PASSWORD }}
+          subject: "✅ Resolved: ${{ github.event.issue.title }}"
+          body: |
+            Hi Ibraheem,
+
+            Good news! The following service has recovered and is now back online:
+
+            • ${{ github.event.issue.title }}
+            • Status Page: https://status.onezcloud.uk
+
+            If you have any questions, feel free to get in touch.
+
+            -- OnezCloud Uptime (ZapYo Ltd)
+          to: ibraheem@example.com
+          cc: will@example.com
+          from: uptime@onezcloud.uk
