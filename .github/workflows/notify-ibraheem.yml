@@ -1,0 +1,39 @@
+name: Notify Ibraheem on Site Incident
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  notify:
+    if: >
+      github.event.issue.title contains 'Ibraheem Dulmeer' ||
+      github.event.issue.title contains 'Park Homes Law' ||
+      github.event.issue.title contains 'Holiday Park Law' ||
+      github.event.issue.title contains 'Lease Barristers' ||
+      github.event.issue.title contains 'Rent Repayment Law'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Brevo email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp-relay.brevo.com
+          server_port: 587
+          username: ${{ secrets.BREVO_USERNAME }}
+          password: ${{ secrets.BREVO_PASSWORD }}
+          subject: "🚨 Incident Alert: ${{ github.event.issue.title }}"
+          body: |
+            Hi Ibraheem,
+
+            One of your monitored sites has been reported as down:
+
+            • Issue: ${{ github.event.issue.title }}
+            • View full details: https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}
+            • Status Page: https://status.onezcloud.uk
+
+            We'll continue to monitor and notify you once the service is restored.
+
+            -- OnezCloud Uptime (ZapYo Ltd)
+          to: ibraheem@example.com
+          cc: will@example.com
+          from: uptime@onezcloud.uk
