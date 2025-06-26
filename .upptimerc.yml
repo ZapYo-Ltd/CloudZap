@@ -4,7 +4,7 @@ repo: uptime
 sites:
   - name: ZapYo Ltd
     sites:
-      - name: ZapYo Ltd
+      - name: ZapYo Ltd Website
         url: https://zapyo.uk
       - name: OnezCloud Status
         url: https://status.onezcloud.uk
@@ -57,4 +57,3 @@ status-website:
       href: https://zapyo.uk
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-``
