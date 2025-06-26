@@ -56,4 +56,4 @@ status-website:
     - title: ZapYo Ltd
       href: https://zapyo.uk
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/ZapYo-Ltd/uptime
