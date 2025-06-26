@@ -2,42 +2,34 @@ owner: ZapYo-Ltd
 repo: uptime
 
 sites:
-  - name: ZapYo Ltd
-    sites:
-      - name: ZapYo Ltd Website
-        url: https://zapyo.uk
-      - name: OnezCloud Status
-        url: https://status.onezcloud.uk
-      - name: UK Buzz
-        url: https://ukbuzz.uk
-      - name: Will Young
-        url: https://willyoung.uk
-      - name: The Young Onez Ltd
-        url: https://theyoungonez.uk
-
+  - name: ZapYo Ltd Website
+    url: https://zapyo.uk
+  - name: OnezCloud Status
+    url: https://status.onezcloud.uk
+  - name: UK Buzz
+    url: https://ukbuzz.uk
+  - name: Will Young
+    url: https://willyoung.uk
+  - name: The Young Onez Ltd
+    url: https://theyoungonez.uk
   - name: Ibraheem Dulmeer
-    sites:
-      - name: Ibraheem Dulmeer
-        url: https://www.ibraheemdulmeer.com
-      - name: Park Homes Law
-        url: https://parkhomeslaw.com
-      - name: Holiday Park Law
-        url: https://www.holidayparklaw.com
-      - name: Lease Barristers
-        url: https://leasebarristers.com
-      - name: Rent Repayment Law
-        url: https://rentrepaymentlaw.com
-      - name: Park Homes Legal UK
-        url: https://parkhomeslegal.uk
-
-  - name: Community & Hospitality
-    sites:
-      - name: The Angel Inn
-        url: https://theangelinn.uk
-      - name: Sweetstay
-        url: https://sweetstay.uk
-      - name: Wrangle Village
-        url: https://wranglevillage.uk
+    url: https://www.ibraheemdulmeer.com
+  - name: Park Homes Law
+    url: https://parkhomeslaw.com
+  - name: Holiday Park Law
+    url: https://www.holidayparklaw.com
+  - name: Lease Barristers
+    url: https://leasebarristers.com
+  - name: Rent Repayment Law
+    url: https://rentrepaymentlaw.com
+  - name: Park Homes Legal UK
+    url: https://parkhomeslegal.uk
+  - name: The Angel Inn
+    url: https://theangelinn.uk
+  - name: Sweetstay
+    url: https://sweetstay.uk
+  - name: Wrangle Village
+    url: https://wranglevillage.uk
 
 assignees:
   - bigdopeywill
