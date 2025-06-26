@@ -7,11 +7,11 @@ on:
 jobs:
   notify:
     if: >
-      github.event.issue.title contains 'Ibraheem Dulmeer' ||
-      github.event.issue.title contains 'Park Homes Law' ||
-      github.event.issue.title contains 'Holiday Park Law' ||
-      github.event.issue.title contains 'Lease Barristers' ||
-      github.event.issue.title contains 'Rent Repayment Law'
+      contains(github.event.issue.title, 'Ibraheem Dulmeer') ||
+      contains(github.event.issue.title, 'Park Homes Law') ||
+      contains(github.event.issue.title, 'Holiday Park Law') ||
+      contains(github.event.issue.title, 'Lease Barristers') ||
+      contains(github.event.issue.title, 'Rent Repayment Law')
     runs-on: ubuntu-latest
     steps:
       - name: Send email via Brevo API
