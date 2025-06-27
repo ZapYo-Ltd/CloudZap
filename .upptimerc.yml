@@ -37,6 +37,8 @@ sites:
 assignees:
   - bigdopeywill
 
+skipDeleteIssues: true
+
 status-website:
   cname: cloudzap.onezcloud.uk
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
