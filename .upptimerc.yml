@@ -4,8 +4,8 @@ repo: CloudZap
 sites:
   - name: ZapYo Ltd Website
     url: https://zapyo.uk
-  - name: OnezCloud Status
-    url: https://status.onezcloud.uk
+  - name: OnezCloud
+    url: https://onezcloud.uk
   - name: UK Buzz
     url: https://ukbuzz.uk
   - name: Will Young
@@ -30,12 +30,14 @@ sites:
     url: https://sweetstay.uk
   - name: Wrangle Village
     url: https://wranglevillage.uk
+  - name: CloudZap
+    url: https://cloudzap.onezcloud.uk
 
 assignees:
   - bigdopeywill
 
 status-website:
-  cname: status.onezcloud.uk
+  cname: cloudzap.onezcloud.uk
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: CloudZap
   introTitle: "**CloudZap** – Uptime Monitoring by OnezCloud"
