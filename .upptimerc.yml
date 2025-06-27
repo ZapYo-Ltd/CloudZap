@@ -1,5 +1,5 @@
 owner: ZapYo-Ltd
-repo: uptime
+repo: CloudZap
 
 sites:
   - name: ZapYo Ltd Website
@@ -37,7 +37,7 @@ assignees:
 status-website:
   cname: status.onezcloud.uk
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: OnezCloud Uptime
+  name: CloudZap
   introTitle: "**CloudZap** – Uptime Monitoring by OnezCloud"
   introMessage: >
     CloudZap is a status monitoring system operated by ZapYo Ltd under the OnezCloud platform.
@@ -53,5 +53,5 @@ status-website:
     - title: ZapYo Ltd
       href: https://zapyo.uk
     - title: GitHub
-      href: https://github.com/ZapYo-Ltd/uptime
+      href: https://github.com/ZapYo-Ltd/CloudZap
 
