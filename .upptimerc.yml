@@ -6,12 +6,8 @@ sites:
     url: https://zapyo.uk
   - name: OnezCloud
     url: https://onezcloud.uk
-  - name: UK Buzz
-    url: https://ukbuzz.uk
-  - name: Will Young
-    url: https://willyoung.uk
-  - name: The Young Onez Ltd
-    url: https://theyoungonez.uk
+  - name: CloudZap (Web Monitor)
+    url: https://cloudzap.onezcloud.uk
   - name: Ibraheem Dulmeer
     url: https://www.ibraheemdulmeer.com
   - name: Park Homes Law
@@ -24,14 +20,19 @@ sites:
     url: https://rentrepaymentlaw.com
   - name: Park Homes Legal UK
     url: https://parkhomeslegal.uk
+  - name: UK Buzz
+    url: https://ukbuzz.uk
+  - name: Will Young
+    url: https://willyoung.uk
+  - name: The Young Onez Ltd
+    url: https://theyoungonez.uk
   - name: The Angel Inn
     url: https://theangelinn.uk
   - name: Sweetstay
     url: https://sweetstay.uk
   - name: Wrangle Village
     url: https://wranglevillage.uk
-  - name: CloudZap
-    url: https://cloudzap.onezcloud.uk
+
 
 assignees:
   - bigdopeywill
