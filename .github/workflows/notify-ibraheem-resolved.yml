@@ -22,7 +22,7 @@ jobs:
           -H 'content-type: application/json' \
           -d '{
                 "sender": {
-                  "name": "OnezCloud Uptime",
+                  "name": "CloudZap Monitor",
                   "email": "watchdog@onezcloud.uk"
                 },
                 "to": [
@@ -32,5 +32,5 @@ jobs:
                   { "email": "watchdog@onezcloud.uk", "name": "Will Young" }
                 ],
                 "subject": "✅ Resolved: ${{ github.event.issue.title }}",
-                "htmlContent": "<p>Hi Ibraheem,</p><p>Good news! The following service has recovered and is now back online:</p><ul><li><strong>Site:</strong> ${{ github.event.issue.title }}</li><li><strong>Status Page:</strong> <a href='https://status.onezcloud.uk'>OnezCloud Status</a></li></ul><p>If you have any questions, feel free to get in touch.</p><p>-- OnezCloud Uptime (ZapYo Ltd)</p>"
+                "htmlContent": "<p>Hi Ibraheem,</p><p>Good news! The following service has recovered and is now back online:</p><ul><li><strong>Site:</strong> ${{ github.event.issue.title }}</li><li><strong>Status Page:</strong> <a href='https://status.onezcloud.uk'>OnezCloud Status</a></li></ul><p>If you have any questions, feel free to get in touch.</p><p>-- CloudZap Monitor (ZapYo Ltd)</p><p><em>⚡️ Monitoring the cloud, one zap at a time.</em></p>"
               }'

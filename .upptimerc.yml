@@ -38,8 +38,8 @@ status-website:
   cname: status.onezcloud.uk
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: OnezCloud Uptime
-  introTitle: "**OnezCloud Uptime** – Monitoring by ZapYo Ltd"
-  introMessage: OnezCloud Uptime is a service provided by ZapYo Ltd, offering real-time monitoring of our digital services and key client platforms. Outages and disruptions will be displayed here as they happen. Powered by [Upptime](https://github.com/upptime/upptime) and GitHub Actions.
+  introTitle: "**CloudZap** – Uptime Monitoring by OnezCloud"
+introMessage: CloudZap is a status monitoring system operated by ZapYo Ltd under the OnezCloud platform. It provides real-time visibility into the uptime and performance of our services and those of key partners. Any service disruptions or outages will appear here. Powered by [Upptime](https://github.com/upptime/upptime) and GitHub Actions.
   navbar:
     - title: Status
       href: /
