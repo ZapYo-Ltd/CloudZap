@@ -52,6 +52,7 @@ status-website:
   cname: cloudzap.onezcloud.uk
   logoUrl: https://onezcloud.uk/CloudZap.svg
   faviconSvg: https://onezcloud.uk/CloudZap.svg
+  theme: ocean
   name: CloudZap
   introTitle: "**CloudZap** – Uptime Monitoring by OnezCloud"
   introMessage: >
