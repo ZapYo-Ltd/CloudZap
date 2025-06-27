@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 706,
-    "timeDay": 706,
-    "timeWeek": 706,
-    "timeMonth": 706,
-    "timeYear": 706,
+    "time": 686,
+    "timeDay": 686,
+    "timeWeek": 686,
+    "timeMonth": 686,
+    "timeYear": 686,
     "dailyMinutesDown": {}
   },
   {
@@ -41,18 +41,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/cloudzap.onezcloud.uk.ico",
     "slug": "cloud-zap-web-monitor",
     "status": "down",
-    "uptime": "0.71%",
-    "uptimeDay": "0.71%",
-    "uptimeWeek": "0.71%",
-    "uptimeMonth": "0.71%",
-    "uptimeYear": "0.71%",
+    "uptime": "1.15%",
+    "uptimeDay": "1.15%",
+    "uptimeWeek": "1.15%",
+    "uptimeMonth": "1.15%",
+    "uptimeYear": "1.15%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2025-06-27": 0
+      "2025-06-27": 1
     }
   },
   {
@@ -120,11 +120,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 933,
-    "timeDay": 958,
-    "timeWeek": 933,
-    "timeMonth": 933,
-    "timeYear": 933,
+    "time": 912,
+    "timeDay": 931,
+    "timeWeek": 912,
+    "timeMonth": 912,
+    "timeYear": 912,
     "dailyMinutesDown": {}
   },
   {
