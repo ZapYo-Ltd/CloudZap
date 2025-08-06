@@ -4,10 +4,10 @@ repo: CloudZap
 sites:
   - name: ZapYo Ltd
     url: https://zapyo.uk
-  - name: OnezCloud
-    url: https://onezcloud.uk
+  - name: ZapSphere
+    url: https://zapsphere.uk
   - name: CloudZap (Web Monitor)
-    url: https://cloudzap.onezcloud.uk
+    url: https://cloudzap.zapsphere.uk
   - name: Ibraheem Dulmeer
     url: https://www.ibraheemdulmeer.com
   - name: Park Homes Law
@@ -49,14 +49,14 @@ workflowSchedule:
   uptime: "*/5 * * * *"
 
 status-website:
-  cname: cloudzap.onezcloud.uk
-  logoUrl: https://onezcloud.uk/CloudZap.svg
-  faviconSvg: https://onezcloud.uk/CloudZap.svg
+  cname: cloudzap.zapsphere.uk
+  logoUrl: https://zapsphere.uk/CloudZap.svg
+  faviconSvg: https://zapsphere.uk/CloudZap.svg
   theme: light
   name: CloudZap
-  introTitle: "**CloudZap** – Uptime Monitoring by OnezCloud"
+  introTitle: "**CloudZap** – Uptime Monitoring by ZapSphere"
   introMessage: >
-    CloudZap is a status monitoring system operated by ZapYo Ltd under the OnezCloud platform.
+    CloudZap is a status monitoring system operated by ZapYo Ltd under the ZapSphere platform.
     It provides real-time visibility into the uptime and performance of our services and those of key partners.
     Any service disruptions or outages will appear here.
     Powered by [Upptime](https://github.com/upptime/upptime) and GitHub Actions.
@@ -64,8 +64,8 @@ status-website:
   navbar:
     - title: Status
       href: /
-    - title: OnezCloud
-      href: https://onezcloud.uk
+    - title: ZapSphere
+      href: https://zapsphere.uk
     - title: ZapYo Ltd
       href: https://zapyo.uk
     - title: GitHub
