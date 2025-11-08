@@ -1,7 +1,7 @@
 url: https://ukbuzz.uk
-status: up
-code: 200
-responseTime: 428
-lastUpdated: 2025-11-07T23:13:25.262Z
+status: down
+code: 415
+responseTime: 331
+lastUpdated: 2025-11-08T13:45:56.560Z
 startTime: 2025-06-26T12:08:32.992Z
 generator: Upptime <https://github.com/upptime/upptime>
