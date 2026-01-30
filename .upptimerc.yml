@@ -42,7 +42,7 @@ status-website:
   faviconSvg: https://willsway.uk/brand-bits/WillsWay_WebCare_Logo_500x500px.svg
   theme: light
   name: WillsWay Webcare
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
+  introTitle: "****WillsWay WebCare** – Live Domain Uptime Status"
   introMessage: This is a sample status page which uses **real-time** data from our [Github repository](https://github.com/koj-co/upptime). No server required — just GitHub Actions, Issues, and Pages.
 
   
