@@ -1,7 +1,7 @@
-url: https://cloudzap.zapsphere.uk
-status: down
-code: 404
+url: https://status.willsway.uk
+status: up
+code: 200
 responseTime: 362
-lastUpdated: 2026-01-30T13:31:29.819Z
+lastUpdated: 2026-01-30T13:33:53.192Z
 startTime: 2026-01-30T11:52:52.302Z
 generator: Upptime <https://github.com/upptime/upptime>
