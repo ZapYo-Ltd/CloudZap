@@ -2,11 +2,9 @@ owner: ZapYo-Ltd
 repo: CloudZap
 
 sites:
-  - name: ZapYo Ltd
-    url: https://zapyo.uk
-  - name: ZapSphere
-    url: https://zapsphere.uk
-  - name: CloudZap (Web Monitor)
+  - name: WillsWay Ltd
+    url: https://willsway.uk
+  - name: WillsWebcare (Web Monitor)
     url: https://cloudzap.zapsphere.uk
   - name: Ibraheem Dulmeer
     url: https://www.ibraheemdulmeer.com
@@ -18,14 +16,8 @@ sites:
     url: https://leasebarristers.com
   - name: Rent Repayment Law
     url: https://rentrepaymentlaw.com
-  - name: Park Homes Legal UK
-    url: https://parkhomeslegal.uk
-  - name: UK Buzz
-    url: https://ukbuzz.uk
   - name: Will Young
     url: https://willyoung.uk
-  - name: Sweetstay
-    url: https://sweetstay.uk
   - name: The Angel Inn
     url: https://theangelinn.uk
 
