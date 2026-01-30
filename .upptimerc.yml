@@ -48,7 +48,6 @@ status-website:
   It provides real-time visibility into website uptime, monitoring, and platform performance.
   Any service incidents, maintenance, or disruptions will be posted here as they occur.
   Powered by [Upptime](https://github.com/upptime/upptime) and GitHub Actions.
-  ⚡ Keeping websites healthy, reliable, and online.
   navbar:
     - title: Status
       href: /
