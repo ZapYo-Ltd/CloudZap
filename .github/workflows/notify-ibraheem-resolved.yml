@@ -22,15 +22,15 @@ jobs:
           -H 'content-type: application/json' \
           -d '{
                 "sender": {
-                  "name": "CloudZap Monitor",
-                  "email": "cloudzap@zapsphere.uk"
+                  "name": "WillsWay WebCare",
+                  "email": "webcare@willsway.uk"
                 },
                 "to": [
                   { "email": "info@ibraheemdulmeer.com", "name": "Ibraheem Dulmeer" }
                 ],
                 "cc": [
-                  { "email": "watchdog@zapsphere.uk", "name": "ZapSphere Watchdog" }
+                  { "email": "webcare@willsway.uk", "name": "WillsWay WebCare" }
                 ],
                 "subject": "✅ Resolved: ${{ github.event.issue.title }}",
-                "htmlContent": "<p>Hi Ibraheem,</p><p>Good news! The following service has recovered and is now back online:</p><ul><li><strong>Site:</strong> ${{ github.event.issue.title }}</li><li><strong>Status Page:</strong> <a href='https://cloudzap.zapsphere.uk'>ZapSphere Status</a></li></ul><p>If you have any questions, feel free to get in touch.</p><p>-- CloudZa Monitor (ZapYo Ltd)</p><p><em>⚡️ Monitoring the cloud, one zap at a time.</em></p>"
+                "htmlContent": "<p>Hi Ibraheem,</p><p>Good news! The following service has recovered and is now back online:</p><ul><li><strong>Site:</strong> ${{ github.event.issue.title }}</li><li><strong>Status Page:</strong> <a href='hhttps://status.willsway.uk'>WillsWay WebCare Domian Status</a></li></ul><p>If you have any questions, feel free to get in touch.</p>"
               }'

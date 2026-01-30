@@ -22,15 +22,15 @@ jobs:
           -H 'content-type: application/json' \
           -d "{
             \"sender\": {
-              \"name\": \"CloudZap Monitor\",
-              \"email\": \"cloudzap@zapsphere.uk\"
+              \"name\": \"WillsWay WebCare\",
+              \"email\": \"webcare@willsway.uk\"
             },
             \"to\": [
               { \"email\": \"info@ibraheemdulmeer.com\", \"name\": \"Ibraheem Dulmeer\" }
             ],
             \"cc\": [
-              { \"email\": \"watchdog@zapsphere.uk\", \"name\": \"ZapSphere Watchdog\" }
+              { \"email\": \"webcare@willsway.uk\", \"name\": \"WillsWay WebCare\" }
             ],
             \"subject\": \"🚨 Incident Alert: ${{ github.event.issue.title }}\",
-            \"htmlContent\": \"<p>Hi Ibraheem,</p><p>One of your monitored sites has been reported as down:</p><ul><li><strong>Issue:</strong> ${{ github.event.issue.title }}</li><li><strong>View full details:</strong> <a href='https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}'>GitHub Issue</a></li><li><strong>Status Page:</strong> <a href='https://cloudzap.zapsphere.uk'>ZapSphere Status</a></li></ul><p>We'll continue to monitor and notify you once the service is restored.</p><p>-- CloudZap Monitor (ZapYo Ltd)</p><p><em>⚡️ Monitoring the cloud, one zap at a time.</em></p>\"
+            \"htmlContent\": \"<p>Hi Ibraheem,</p><p>One of your monitored sites has been reported as down:</p><ul><li><strong>Issue:</strong> ${{ github.event.issue.title }}</li><li><strong>View full details:</strong> <a href='https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}'>GitHub Issue</a></li><li><strong>Status Page:</strong> <a href='https://status.willsway.uk'>WillsWay WebCare Domian Status</a></li></ul><p>We'll continue to monitor and notify you once the service is restored.</p><p>"
           }"

@@ -15,8 +15,8 @@ jobs:
           -H 'api-key: ${{ secrets.BREVO_API_KEY }}' \
           -H 'content-type: application/json' \
           -d '{
-                "sender": { "name": "CloudZap Monitor", "email": "cloudzap@zapsphere.uk" },
-                "to": [{ "email": "watchdog@zapsphere.uk", "name": "ZapSphere Watchdog" }],
+                "sender": { "name": "WillsWay WebCare", "email": "webcare@willsway.uk" },
+                "to": [{ "email": "webcare@willsway.uk", "name": "WillsWay WebCare" }],
                 "subject": "'"${{ github.event.issue.state == 'closed' && '✅ RESOLVED' || '🚨 ALERT' }}: ${{ github.event.issue.title }}"'",
-                "htmlContent": "<p>Hello Will,</p><p>This is an internal alert from CloudZap Monitor.</p><ul><li><strong>Event:</strong> ${{ github.event.issue.state == 'closed' && 'Resolved' || 'Incident Opened' }}</li><li><strong>Site:</strong> ${{ github.event.issue.title }}</li><li><strong>Details:</strong> <a href='https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}'>View Issue</a></li></ul><p>-- Automated CloudZap Monitor Notification (ZapYo Ltd)</p><p><em>⚡️ Monitoring the cloud, one zap at a time.</em></p>"
+                "htmlContent": "<p>Hello Will,</p><p>This is an internal alert from WillsWay Webcare.</p><ul><li><strong>Event:</strong> ${{ github.event.issue.state == 'closed' && 'Resolved' || 'Incident Opened' }}</li><li><strong>Site:</strong> ${{ github.event.issue.title }}</li><li><strong>Details:</strong> <a href='https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}'>View Issue</a></li></ul><p>-- Automated WillsWay Webcare Domain Monitor Notification</p><p><em>"
               }'
