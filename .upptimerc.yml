@@ -43,8 +43,8 @@ status-website:
   theme: light
   name: WillsWay Webcare
   introTitle: "**WillsWay WebCare** – Live Domain Uptime Status"
-  introMessage: >
-    This is the official status page for services managed by **WillsWay WebCare**.
+  introMessage:
+  This is the official status page for services managed by **WillsWay WebCare**.
   It provides real-time visibility into website uptime, monitoring, and platform performance.
   Any service incidents, maintenance, or disruptions will be posted here as they occur.
   Powered by [Upptime](https://github.com/upptime/upptime) and GitHub Actions.
